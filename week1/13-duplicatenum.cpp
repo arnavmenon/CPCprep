@@ -2,8 +2,9 @@
 #include <vector>
 using namespace std;
 
+//works for single duplicate;
 
-int duplicate( int arr[], int n){
+/* int duplicate( int arr[], int n){
 
     int ans = 0;
     
@@ -15,31 +16,20 @@ int duplicate( int arr[], int n){
      
     return ans;
 }
+ */
 
 
+int duplicate(vector<int>& nums) {
 
-int main()
-{
-	int arr[] = {3,1,3,4,2};
+        for(auto i: nums){
 
-	int n = sizeof(arr) / sizeof(arr[0]);
+            if(nums[abs(i)]<0) 
+                return abs(i);
 
-	cout<<duplicate(arr, n)<<"\n";
-
-	return 0;
+            else
+                nums[abs(i)] *=-1;
+        }
+        
+        return -1;
 }
 
-
-//gfg
-/* int MissingNumber(vector<int>& array, int n) {
-    int ans = 0;
-    
-    for (int i = 0; i < n-1; i++) {
-        ans = ans ^ array[i];
-    }
-
-    for (int i = 1; i <= n; i++)    
-        ans = ans ^ i;
-     
-    return ans;
-} */
