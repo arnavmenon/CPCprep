@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "ostream": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "xlocale": "cpp",
+        "initializer_list": "cpp"
     }
 }
