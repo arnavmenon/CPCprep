@@ -3,6 +3,7 @@
         "ostream": "cpp",
         "xutility": "cpp",
         "xlocale": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "xiosbase": "cpp"
     }
 }
