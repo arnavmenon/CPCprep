@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void helper(Node* root,vector<int> arr,vector<vector<int>> &ans)
+void _paths(Node* root,vector<int> arr,vector<vector<int>> &ans)
 {
     if(!root)
         return;
@@ -14,8 +14,8 @@ void helper(Node* root,vector<int> arr,vector<vector<int>> &ans)
         return;
     }
    
-    helper(root->left,arr,ans);
-    helper(root->right,arr,ans);
+    _paths(root->left,arr,ans);
+    _paths(root->right,arr,ans);
 }
 vector<vector<int>> Paths(Node* root)
 {
@@ -26,7 +26,7 @@ vector<vector<int>> Paths(Node* root)
         
     vector<int> arr;
    
-    helper(root,arr,ans);
+    _paths(root,arr,ans);
    
     return ans;
 }
