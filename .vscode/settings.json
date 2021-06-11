@@ -5,6 +5,7 @@
         "xlocale": "cpp",
         "initializer_list": "cpp",
         "xiosbase": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "utility": "cpp"
     }
 }
