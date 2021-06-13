@@ -29,8 +29,6 @@ using namespace std;
 			t = q.front();
 			q.pop();
 
-			pair<int, int> dirs[4] = { {0, 1}, {0, -1}, {1, 0}, {-1, 0} };
-
             for(int i=0; i<4; i++){
 
                 int tx= t.first + NS[i];
