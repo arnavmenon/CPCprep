@@ -6,6 +6,7 @@
         "initializer_list": "cpp",
         "xiosbase": "cpp",
         "vector": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "xstring": "cpp"
     }
 }
